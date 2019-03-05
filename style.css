@@ -189,26 +189,6 @@ a:hover {
 	overflow: hidden;
 	height: 52px;
 }
-#menu ul li {
-/* on enlève ce comportement pour les liens du sous menu */
-    display: inherit;
-}
-
-#menu ul li {
-/* on enlève ce comportement pour les liens du sous menu */
-    display: inherit;
-}
-#menu ul {
-    position: absolute;
-/* on cache les sous menus complètement sur la gauche */
-    left: -999em;
-    text-align: left;
-    z-index: 1000;
-}
-#menu li:hover ul {
-/* Au survol des li du menu on replace les sous menus */
-    left: auto;
-}
 
 #menu ul {
 	margin: 0;
@@ -219,7 +199,11 @@ a:hover {
 }
 
 #menu li {
-	display: inline-block;
+ display: inline-block;
+ float:center;
+ margin:auto;
+ padding:0;
+ background-color:black;
 }
 
 #menu a {
@@ -245,6 +229,21 @@ a:hover {
 
 #menu .current_page_item a {
 }
+
+#menu ul li ul {
+ display:none;
+ }
+
+#menu ul li:hover ul {
+ display:block;
+ }
+#menu li:hover ul li {
+ float:left;
+ }
+
+#menu li ul {
+ position:absolute;
+ }
 
 /* Page */
 
@@ -574,6 +573,9 @@ a:hover {
 	color: #FFFFFF;
 }
 .entry {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center
 }
 
