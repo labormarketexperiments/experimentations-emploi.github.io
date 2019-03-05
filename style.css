@@ -17,7 +17,7 @@ body {
 h1, h2, h3 {
 	margin: 0;
 	padding: 0;
-	text-transform: uppercase;
+    text-transform: uppercase;
 	font-weight: 300;
 	color: #7D7764;
 }
@@ -90,7 +90,7 @@ a:hover {
 
 #logo {
 	overflow: hidden;
-	height: 250px;
+	height: 200px;
 }
 
 #logo h1, #logo p {
@@ -98,10 +98,9 @@ a:hover {
 }
 
 #logo h1 {
-	padding: 50px 0px 0px 0px;
+	padding: 50px 0px 10px 0px;
 	letter-spacing: -6px;
-	text-transform: lowercase;
-	font-size: 100px;
+	font-size: 70px;
 }
 
 #logo p {
@@ -189,6 +188,26 @@ a:hover {
 #menu {
 	overflow: hidden;
 	height: 52px;
+}
+#menu ul li {
+/* on enlève ce comportement pour les liens du sous menu */
+    display: inherit;
+}
+
+#menu ul li {
+/* on enlève ce comportement pour les liens du sous menu */
+    display: inherit;
+}
+#menu ul {
+    position: absolute;
+/* on cache les sous menus complètement sur la gauche */
+    left: -999em;
+    text-align: left;
+    z-index: 1000;
+}
+#menu li:hover ul {
+/* Au survol des li du menu on replace les sous menus */
+    left: auto;
 }
 
 #menu ul {
@@ -554,3 +573,8 @@ a:hover {
 	padding: 1em 2em;
 	color: #FFFFFF;
 }
+.entry {
+    text-align: center
+}
+
+
