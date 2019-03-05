@@ -18,7 +18,7 @@ h1, h2, h3 {
 	margin: 0;
 	padding: 0;
     text-transform: uppercase;
-	font-weight: 300;
+	font-weight: 200;
 	color: #7D7764;
 }
 
@@ -28,10 +28,18 @@ h1 {
 
 h2 {
 	font-size: 2.8em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1.little {
+	font-size: 1em;
+    font-weight: 100;
 }
 
 h3 {
 	font-size: 1.6em;
+    text-align: center;
 }
 
 p, ul, ol {
@@ -56,8 +64,8 @@ a:hover {
 }
 
 .container {
-	width: 1200px;
-	margin: 0px auto;
+	width: 80%;
+	margin: auto;
 }
 
 /* Header */
@@ -101,6 +109,12 @@ a:hover {
 	padding: 50px 0px 10px 0px;
 	letter-spacing: -6px;
 	font-size: 70px;
+}
+
+#logo h2 {
+	padding: 50px 0px 0px 0px;
+	letter-spacing: -2px;
+	font-size: 2.6em;
 }
 
 #logo p {
@@ -577,6 +591,34 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     text-align: center
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
 }
 
 
