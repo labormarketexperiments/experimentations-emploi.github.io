@@ -667,9 +667,9 @@
 		cursor: default;
 	}
 
-	#logo-header h1 {
+	#logo-header h2 {
         margin-top: 4em;
-        font-size: 2em;
+        font-size: 1.6em;
 		display: inline-block;
-		text-transform: uppercase;
+        line-height: +0.3em;
 	}
