@@ -869,7 +869,9 @@ a.sites {
 .info {
   display: table-cell;
   vertical-align: middle;
-  padding: 15px;
+  padding: 10px;
+  width: 50%;
+  height: auto;
 }
 
 
