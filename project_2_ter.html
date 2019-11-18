@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Pôle-Emploi x CREST</title>
+		<title>Pôle emploi x CREST</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -42,7 +42,7 @@
 				<!-- Header -->
 					<div id="header" class="skel-panels-fixed">
 						<div id="logo">
-							<h1><a href="index.html">Pôle-Emploi x CREST</a></h1>
+							<h1><a href="index.html">Pôle emploi x GENES</a></h1>
 							<span class="tag">Expériences sur le marché du travail</span>
 						</div>
 						<nav id="nav">
@@ -50,20 +50,18 @@
 								<li class="active"><a href="index.html">Accueil</a></li>
 								<li><a href="">Nos projets</a>
                                     <ul class="submenu">
-                                        <li><a href="project_1.html">Accès à la formation professionnelle</a></li>
-                                        <li><a href="project_2.html">Algorithmes de recommandation d'offres et de candidats </a></li>
+                                        <li><a href="project_1_bis.html">Prendre en compte les préférences des demandeurs d'emploi pour mieux les conseiller</a></li>
+                                        <li><a href="project_1_ter.html">Construire et tester un système de recommandation innovant </a></li>
                                         <li><a href="project_3.html">Informer sur les opportunités locales d'emploi</a></li>
-                                        <li><a href="project_4.html">Informer sur les chances de retour à l'emploi</a></li>
-                                        <li><a href="project_5.html">Evaluation de Bob Emploi</a></li>
-                                        <li><a href="project_6.html">Ciblage des programmes d'aide à la recherche</a></li>
+                                        <li><a href="project_6.html">Informer sur les chances personnelles de retour à l'emploi</a></li>
+                                        <li><a href="project_1.html">Accès à la formation professionnelle</a></li>
+                                        <li><a href="project_5.html">Evaluation de Bob-Emploi</a></li>
                                       </ul>
                                 </li>
 
 							</ul>
 						</nav>
 					</div>
-
-				<!-- Header -->
 
 				<!-- Page -->
 					<div id="page" class="container">
@@ -91,7 +89,7 @@
                             <br>
                 
                             <p>
-                                Le marché du travail est un système complexe dans lequel plusieurs parties ont des objectifs différents. Les demandeurs d'emploi souhaitent trouver un emploi en adéquation avec certains critères, qui peuvent varier en fonction de leurs compétences, de leur localisation, de leur situation familiale, etc. Les recruteurs cherchent quant à eux le meilleur candidat pour des postes vacants en se basant notamment sur l’expérience, les compétences et la personnalité. Parallèlement, Pôle-Emploi a pour objectif de maximiser le nombre d'appariements durables entre recruteurs et demandeurs d'emploi. L'idée centrale de ce projet est de mobiliser les données massives dont dispose Pôle-Emploi pour construire un système de recommandation d'offres d'emploi et de candidats dans le but final d'améliorer l'appariement des demandeurs d'emploi et des emplois vacants. 
+                                Le marché du travail est un système complexe dans lequel plusieurs parties ont des objectifs différents. Les demandeurs d'emploi souhaitent trouver un emploi en adéquation avec certains critères, qui peuvent varier en fonction de leurs compétences, de leur localisation, de leur situation familiale, etc. Les recruteurs cherchent quant à eux le meilleur candidat pour des postes vacants en se basant notamment sur l’expérience, les compétences et la personnalité. Parallèlement, Pôle emploi a pour objectif de maximiser le nombre d'appariements durables entre recruteurs et demandeurs d'emploi. L'idée centrale de ce projet est de mobiliser les données massives dont dispose Pôle emploi pour construire un système de recommandation d'offres d'emploi et de candidats dans le but final d'améliorer l'appariement des demandeurs d'emploi et des emplois vacants. 
                             </p>
                         
                             <p style = "text-align: center; color:#1C5669;">   
@@ -104,7 +102,7 @@
                             <br>
                             <p>
 
-                            Le projet s'appuie sur la mobilisation de l'ensemble considérable des informations sur les demandeurs d'emploi et les entreprises dont dispose Pôle-Emploi, parmi lesquelles certaines (les données textuelles notamment) sont encore inexploitées. Ces informations seront ensuite retraitées pour élaborer deux fonctionnalités, de nature technique et d'inspiration économique différentes, les évaluer et les comparer rigoureusement.
+                            Le projet s'appuie sur la mobilisation de l'ensemble considérable des informations sur les demandeurs d'emploi et les entreprises dont dispose Pôle emploi, parmi lesquelles certaines (les données textuelles notamment) sont encore inexploitées. Ces informations seront ensuite retraitées pour élaborer deux fonctionnalités, de nature technique et d'inspiration économique différentes, les évaluer et les comparer rigoureusement.
 
                             </p>
                                 
@@ -114,7 +112,7 @@
                                 
                             <br>
                                 
-                            Pour ce faire, il s'agira de créer, à partir des données que nous aurons pu regrouper et formater, un système de recommandation capable d'identifier, lister et ordonner des offres d'emplois susceptibles de mener à l'embauche d'un demandeur d'emploi, et symétriquement les CVs pertinents pour une offre d'emploi donnée. Nous nous attacherons dans un premier temps à appliquer des modèles de recommandation simples, de type co-embedding filtering, reposant sur des historiques d'appariement, et des modèles de proximité entre demandeurs, offres et entreprises. Afin d'utiliser ces techniques intuitives (si un demandeur partage beaucoup de caractéristiques avec un autre demandeur, et que ce dernier a été embauché par une entreprise pour une certaine offre, quelle autre entreprise, ou autre offre, similaire à cette dernière, pourrions nous lui proposer?).  Dans ce contexte, il sera capital d'apprendre des ``plongements'' capables d'encoder efficacement ces proximités de compétence. Ils seront dans un premier temps appris en utilisant essentiellement les données dont dispose Pôle-Emploi (données sociodémographiques, paramètres de recherche d'emploi, historique en chômage, offres d'emploi déposées dans le passé, flux d'embauches passés), et tout spécialement des données textuelles représentées sous la forme de vecteurs via des ``word embeddings''.  Nous apprendrons alors, à la fois pour les demandeurs, les offres et les entreprises, une transformation linéaire (voire neuronale multi-couches) corrélée avec des statistiques de co-occurrence (embauche). Selon les résultats obtenus, nous serons peut être confrontés à la sur-représentation de certaines offres ou profils dans nos prédictions. Afin de ne pas aboutir à cette forme de saturation dans notre recommandation, nous mettrons en place des stratégies de régularisation et d'optimisation d'appariement qui permettront d'ajouter de la diversité dans ces recommandations. </p>
+                            Pour ce faire, il s'agira de créer, à partir des données que nous aurons pu regrouper et formater, un système de recommandation capable d'identifier, lister et ordonner des offres d'emplois susceptibles de mener à l'embauche d'un demandeur d'emploi, et symétriquement les CVs pertinents pour une offre d'emploi donnée. Nous nous attacherons dans un premier temps à appliquer des modèles de recommandation simples, de type co-embedding filtering, reposant sur des historiques d'appariement, et des modèles de proximité entre demandeurs, offres et entreprises. Afin d'utiliser ces techniques intuitives (si un demandeur partage beaucoup de caractéristiques avec un autre demandeur, et que ce dernier a été embauché par une entreprise pour une certaine offre, quelle autre entreprise, ou autre offre, similaire à cette dernière, pourrions nous lui proposer?).  Dans ce contexte, il sera capital d'apprendre des ``plongements'' capables d'encoder efficacement ces proximités de compétence. Ils seront dans un premier temps appris en utilisant essentiellement les données dont dispose Pôle emploi (données sociodémographiques, paramètres de recherche d'emploi, historique en chômage, offres d'emploi déposées dans le passé, flux d'embauches passés), et tout spécialement des données textuelles représentées sous la forme de vecteurs via des ``word embeddings''.  Nous apprendrons alors, à la fois pour les demandeurs, les offres et les entreprises, une transformation linéaire (voire neuronale multi-couches) corrélée avec des statistiques de co-occurrence (embauche). Selon les résultats obtenus, nous serons peut être confrontés à la sur-représentation de certaines offres ou profils dans nos prédictions. Afin de ne pas aboutir à cette forme de saturation dans notre recommandation, nous mettrons en place des stratégies de régularisation et d'optimisation d'appariement qui permettront d'ajouter de la diversité dans ces recommandations. </p>
                             
                                 <h3>Carte située de l'emploi</h3>
                                 
@@ -163,7 +161,7 @@
 									<h2>A propos de nous</h2>
                                     <br>
                                         
-                                        <li><b>La Direction des Statistiques, des Études et de l’Évaluation de Pôle-Emploi</b></li> 
+                                        <li><b>La Direction des Statistiques, des Études et de l’Évaluation de Pôle emploi</b></li> 
                                         
                                         <p>La DSEE a deux missions principales : <br>
                                         (i) L'amélioration de l’efficacité de l’action de l’opérateur, en développant une connaissance fine des trajectoires des demandeurs d’emploi et des canaux de recrutements, en évaluant l’action de Pôle emploi et en élaborant des algorithmes qui alimentent les outils d’aide à la décision ; <br>
